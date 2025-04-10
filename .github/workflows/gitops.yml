@@ -87,9 +87,9 @@ jobs:
     - name: Clone repository
       run: |
         rm -Rf *
-        git clone git@github.com:fallewi/gitops-fleet-helm.git
+        git clone git@github.com:fallewi/gitops-manifests.git
         ls
-        cd gitops-fleet-helm/
+        cd gitops-manifests/
         cat values.yaml
         sed -i "s+tag.*+tag: ${GITHUB_SHA}+g" values.yaml
         cat values.yaml
