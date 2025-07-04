@@ -194,7 +194,7 @@ To install ArgoCD on an NKE (or any other Kubernetes cluster), you can use the f
 
 ```
 kubectl create namespace argocd
-kubectl apply -n argocd -f raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
 
 This command will create a namespace called argocd and deploy **ArgoCD** on your Kubernetes cluster using the installation manifests provided by the ArgoCD project. The manifests are fetched from the GitHub repository and applied to the argocd namespace.
