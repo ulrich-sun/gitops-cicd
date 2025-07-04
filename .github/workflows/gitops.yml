@@ -2,8 +2,8 @@ name: Fast-API CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  # pull_request:
+  #   branches: [ master ]
 env:
   dockerhub_id: ulrichsteve
   dockerhub_repository: fastapi
