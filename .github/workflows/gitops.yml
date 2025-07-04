@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ master ]
 env:
-  dockerhub_id: fallewi
+  dockerhub_id: ulrichsteve
   dockerhub_repository: fastapi
   dockerhub_latest: latest
   container: webinar
@@ -74,7 +74,7 @@ jobs:
     - name: Clone repository
       run: |
         rm -Rf *
-        git clone git@github.com:fallewi/gitops-manifests.git
+        git clone git@github.com:ulrich-sun/gitops-manifests.git
         ls
         cd gitops-manifests/
         cat values.yaml
@@ -84,8 +84,8 @@ jobs:
       run: |
         ls
         cd gitops-manifests
-        git config --global user.name "Fall lewis"
-        git config --global user.email "fall-lewis.y@datascientest.com"
+        git config --global user.name "ulrich-sun"
+        git config --global user.email "ulrichnoumsi98@gmail.com"
         git add -A
         git commit -m "mis à jour de l'image avec le tag ${GITHUB_SHA}"
         git push origin master
